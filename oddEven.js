@@ -5,9 +5,6 @@ const rl = readline.createInterface({
 });
 
 rl.on('line', function (line) {
-  if (line % 2 === 0) {
-    console.log(`${line} is even`);
-  } else if (line % 2 === 1) {
-    console.log(`${line} is odd`);
-  }
+  const sniffling = Number(line) % 2 ? 'odd' : 'even';
+  console.log(line + ' is ' + sniffling);
 });
